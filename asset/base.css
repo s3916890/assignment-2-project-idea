@@ -1,0 +1,106 @@
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #00c5dd;
+    --text-color: #333;
+    --text-color-2: #fff;
+}
+.btn{
+    position: relative;
+    left: 35%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: monospace, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.text_white_color{
+    color: #fff !important;
+}
+.text_black_color{
+    color: #000;
+}
+
+/* ====-============================= CONTENT ====================================== */
+.section-title{
+    width: 100%;
+    text-align: center;
+}
+.section-title__header{
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.section-title__header::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13px;
+    background: #000;
+    width: 65px;
+    height: 4px;
+}
+.contact .section-title__header::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13px;
+    background: #fff;
+    width: 65px;
+    height: 4px;
+}
+.about .section-title__header::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13px;
+    background: #fff;
+    width: 65px;
+    height: 4px;
+}
+.section-title__content{
+    max-width: 700px;
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'SF Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.2em;
+    /* opacity: 0.8; */
+    letter-spacing: 0.05rem;
+}
+
+@media (max-width: 990px) {
+    .btn{
+        position: relative;
+        left: 38.3%;
+    }
+}
+@media (max-width: 500px){
+    .btn{
+        position: relative;
+        left: 20.3%;
+    }
+}
